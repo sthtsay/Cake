@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Countdown</title>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="countdown.css">
+</head>
+<body>
+    <div class="lock-container">
+        <div class="lock-icon">🔒</div>
+        <h1>Birthday Locked</h1>
+        <p class="message">This birthday surprise is still being prepared!</p>
+        
+        <!-- Countdown timer with days, hours, minutes, seconds -->
+        <div id="countdown" class="countdown">
+            <div class="countdown-item">
+                <div id="days" class="countdown-value">00</div>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <div id="hours" class="countdown-value">00</div>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <div id="minutes" class="countdown-value">00</div>
+                <div class="countdown-label">Minutes</div>
+            </div>
+            <div class="countdown-item">
+                <div id="seconds" class="countdown-value">00</div>
+                <div class="countdown-label">Seconds</div>
+            </div>
+        </div>
+        
+        <!-- Hidden elements shown when countdown completes -->
+        <div id="unlocked-message" class="hidden">
+            <p class="message">It's your birthday! Click below to see your surprise.</p>
+        </div>
+        
+        <button id="unlock-btn" class="unlock-button hidden">Open Birthday Surprise</button>
+    </div>
+    
+    <!-- Decorative cake SVG -->
+    <div class="cake-small">
+        <svg viewBox="0 0 100 100">
+            <path fill="#a88679" d="M50,70 C30,70 10,75 10,80 C10,85 30,90 50,90 C70,90 90,85 90,80 C90,75 70,70 50,70 Z"/>
+            <path fill="#fefae9" d="M50,40 C40,40 30,45 30,55 C30,65 40,70 50,70 C60,70 70,65 70,55 C70,45 60,40 50,40 Z"/>
+            <path fill="#8b6a60" d="M50,30 C48,30 46,32 46,34 L46,40 C46,42 48,44 50,44 C52,44 54,42 54,40 L54,34 C54,32 52,30 50,30 Z"/>
+            <circle fill="#ff9e6d" cx="50" cy="25" r="4"/>
+        </svg>
+    </div>
+    
+    <!-- External JavaScript file -->
+    <script src="countdown.js"></script>
+</body>
+</html>

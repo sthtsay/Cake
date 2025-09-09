@@ -1,0 +1,160 @@
+/* Import Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+
+/* Reset and base styles */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scrollbar-width: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling with background and flex layout */
+body {
+    background: #ee9ca7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-120px); /* Move everything up by 120px */
+}
+
+/* Name styling */
+.name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #8b6a60;
+    margin-top: 5px;
+}
+
+/* Cake container */
+.cake-container {
+    position: relative;
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* Cake SVG */
+#cake {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Candle styling */
+.candle {
+    background: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    top: 376px;
+    width: 5px;
+    height: 35px;
+    transform: translateY(-300px);
+    backface-visibility: hidden;
+    animation: in 500ms 6s ease-out forwards, fadeIn 0.5s 6.6s forwards;
+    z-index: 10;
+    opacity: 0;
+}
+
+/* Candle decorations */
+.candle:after,
+.candle:before {
+    background: rgba(255, 0, 0, 0.4);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2.22222222px;
+}
+
+.candle:after {
+    top: 25%;
+    left: 0;
+}
+
+.candle:before {
+    top: 45%;
+    left: 0;
+}
+
+/* Positioning for 12 candles - more proportional and centered */
+.candle:nth-child(1) { left: 20%; }
+.candle:nth-child(2) { left: 25.45%; }
+.candle:nth-child(3) { left: 30.91%; }
+.candle:nth-child(4) { left: 36.36%; }
+.candle:nth-child(5) { left: 41.82%; }
+.candle:nth-child(6) { left: 47.27%; }
+.candle:nth-child(7) { left: 52.73%; }
+.candle:nth-child(8) { left: 58.18%; }
+.candle:nth-child(9) { left: 63.64%; }
+.candle:nth-child(10) { left: 69.09%; }
+.candle:nth-child(11) { left: 74.55%; }
+.candle:nth-child(12) { left: 80%; }
+
+/* Flame styling */
+.fuego {
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    margin-left: -2.6px;
+    width: 6.66666667px;
+    height: 18px;
+}
+
+/* Flame animation with different delays */
+.fuego:nth-child(1) { animation: fuego 2s 6.5s infinite; }
+.fuego:nth-child(2) { animation: fuego 1.5s 6.5s infinite; }
+.fuego:nth-child(3) { animation: fuego 1s 6.5s infinite; }
+.fuego:nth-child(4) { animation: fuego 0.5s 6.5s infinite; }
+.fuego:nth-child(5) { animation: fuego 0.2s 6.5s infinite; }
+
+/* Flame animation keyframes */
+@keyframes fuego {
+    0%, 100% {
+        background: rgba(254, 248, 97, 0.5);
+        box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        background: rgba(255, 50, 0, 0.1);
+        box-shadow: 0 0 40px 20px rgba(248, 233, 209, 0.2);
+        transform: translateY(-20px) scale(0);
+    }
+}
+
+/* Candle entrance animation */
+@keyframes in {
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Text styling */
+.text {
+    color: #8b6a60;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+/* Heading styling */
+.text h1 {
+    font-size: 1.4em;
+    margin: 0;
+    padding: 5px 0;
+}

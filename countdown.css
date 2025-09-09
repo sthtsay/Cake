@@ -1,0 +1,137 @@
+/* Import Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic);
+
+/* Reset and base styles */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Body styling with background and flex layout */
+body {
+    background: #ee9ca7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #8b6a60;
+}
+
+/* Main container with glassmorphism effect */
+.lock-container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Lock icon styling */
+.lock-icon {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: #fefae9;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading styling */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #fefae9;
+}
+
+/* Message text styling */
+.message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+/* Countdown timer container */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Individual countdown item */
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Countdown value styling */
+.countdown-value {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fefae9;
+    background: rgba(255, 255, 255, 0.2);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Countdown label styling */
+.countdown-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Unlock button styling */
+.unlock-button {
+    background: #fefae9;
+    color: #8b6a60;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effect */
+.unlock-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hidden utility class */
+.hidden {
+    display: none;
+}
+
+/* Decorative cake styling */
+.cake-small {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+}
+
+/* SVG container styling */
+.cake-small svg {
+    width: 100%;
+    height: 100%;
+}
