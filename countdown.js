@@ -1,6 +1,6 @@
 // Set the birthday date (month: 0-11, day: 1-31)
-const birthdayMonth = 8; // September (0-based index)
-const birthdayDay = 10;  // 11th day of the month
+const birthdayMonth = 0; // September (0-based index)
+const birthdayDay = 8;  // 11th day of the month
 
 // Get current date
 const currentDate = new Date();
